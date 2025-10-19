@@ -21,3 +21,47 @@ origin	git@github.com:mrtx4r0/TIL (fetch)
 origin	git@github.com:mrtx4r0/TIL (push)
 ```
 ## 3.githubのリポジトリ（リモート）にPUSHする
+```bash
+$ ssh-keygen -t ed25519 -C "britishrocklover@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/Users/(user)/.ssh/id_ed25519):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /Users/(user)/.ssh/id_ed25519
+Your public key has been saved in /Users/(user)/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:QS9C4InN4foMuE5Td3z9TQ1upCfsf69xJeWZgEhgpp4 xxxxxxxxx@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|    o..+o.       |
+|   * ++.... .    |
+|  . *.. o... .o .|
+| . .. o. o.. +.++|
+|. o. E oS. .+ =++|
+| ..+. . .  ..+o..|
+|.o  o       .....|
+|o .          . o.|
+| .            ooo|
++----[SHA256]-----+
+```
+
+
+```bash
+$ git push -u origin main
+The authenticity of host 'github.com (20.27.177.113)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Enter passphrase for key '/Users/(user)/.ssh/id_ed25519':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 800 bytes | 800.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:mrtx4r0/TIL
+   46ae43d..aae7330  main -> main
+branch 'main' set up to track 'origin/main'.
+```
+
