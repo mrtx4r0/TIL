@@ -5,15 +5,20 @@ TILという名前で新規リポジトリを作る
 ```bash
 # ディレクトリを作成
 $ mkdir -p github/TIL
+
 # git管理開始
 $ git init
+
 # デフォルトブランチ名をmainにかえる
 $ git branch -m master main
+
 # リポジトリ説明のためのREADMEだけとりあえず作成 
 $ echo "TIL is repository for learning" > README.md
+
 # コミット
 $ git add .
 $ git commit -m "Initial Commit"
+
 # リモートリポジトリに名前をつける
 $ git remote add origin git@github.com:mrtx4r0/TIL
 $ git remote -v
@@ -54,6 +59,8 @@ Host github.com
 ```
 
 ```bash
+プッシュする
+ ※ -uでorigin/mainとローカルのmainブランチを紐づける(リモートのmainを追跡させる)
 $ git push -u origin main
 The authenticity of host 'github.com (20.27.177.113)' can't be established.
 ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
