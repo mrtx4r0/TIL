@@ -58,9 +58,9 @@ Host github.com
   Identityfile ~/.ssh/id_ed25519
 ```
 
-```bash
 プッシュする
- ※ -uでorigin/mainとローカルのmainブランチを紐づける(リモートのmainを追跡させる)
+※ -uでorigin/mainとローカルのmainブランチを紐づける(リモートのmainを追跡させる)
+```bash
 $ git push -u origin main
 The authenticity of host 'github.com (20.27.177.113)' can't be established.
 ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
