@@ -21,6 +21,7 @@ origin	git@github.com:mrtx4r0/TIL (fetch)
 origin	git@github.com:mrtx4r0/TIL (push)
 ```
 ## 3.githubのリポジトリ（リモート）にPUSHする
+ユーザ認証のための公開鍵を作成しておく
 ```bash
 $ ssh-keygen -t ed25519 -C "xxxxxxxx@gmail.com"
 Generating public/private ed25519 key pair.
@@ -35,16 +36,22 @@ The key's randomart image is:
 +--[ED25519 256]--+
 |    o..+o.       |
 |   * ++.... .    |
-|  . *.. o... .o .|
-| . .. o. o.. +.++|
-|. o. E oS. .+ =++|
-| ..+. . .  ..+o..|
-|.o  o       .....|
+(中略）
 |o .          . o.|
 | .            ooo|
 +----[SHA256]-----+
 ```
-
+sshが使用する公開鍵の認証アルゴリズムを指定しておく
+```bash
+$ touch ~/.ssh/config
+```
+configに以下のように記述する
+```bash
+# ~/.ssh/config
+Host github.com
+  User git
+  Identityfile ~/.ssh/id_ed25519
+```
 
 ```bash
 $ git push -u origin main
