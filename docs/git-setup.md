@@ -22,7 +22,7 @@ origin	git@github.com:mrtx4r0/TIL (push)
 ```
 ## 3.githubのリポジトリ（リモート）にPUSHする
 ```bash
-$ ssh-keygen -t ed25519 -C "britishrocklover@gmail.com"
+$ ssh-keygen -t ed25519 -C "xxxxxxxx@gmail.com"
 Generating public/private ed25519 key pair.
 Enter file in which to save the key (/Users/(user)/.ssh/id_ed25519):
 Enter passphrase (empty for no passphrase):
