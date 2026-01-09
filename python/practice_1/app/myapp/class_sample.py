@@ -12,6 +12,6 @@ class User:
     def start_name(self):
         if len(self.name) > 0:
             return self.name[0]
-        else
+        else:
             return ""
 
