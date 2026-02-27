@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 print(f'os.getcwd():{os.getcwd()}')
 
@@ -15,4 +16,4 @@ print(user.age)
 user.start_name()
 
 
-
+import fib
